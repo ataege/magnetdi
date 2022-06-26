@@ -1,0 +1,25 @@
+{
+  "name": "@ataegeasilturk/magnetdi",
+  "version": "0.0.1",
+  "description": "Alternative Typescript dependency injection package.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "tsc",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ataege/magnetdi.git"
+  },
+  "author": "ataegeasilturk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ataege/magnetdi/issues"
+  },
+  "homepage": "https://github.com/ataege/magnetdi#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
