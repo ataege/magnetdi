@@ -1,6 +1,11 @@
 import { find } from 'lodash';
 import { UnknownProviderError } from '../errors';
 
+export interface ContainerProvider {
+	useValue: any;
+	token: string;
+}
+
 export class Container {
 	public providers: { [key: string]: any } = {};
 
@@ -10,6 +15,9 @@ export class Container {
 		if (match) return match;
 
 		throw new UnknownProviderError(token);
+	}
+	public provide(provider: ContainerProvider): void {
+		this.providers[provider.token] = provider.useValue;
 	}
 }
 
