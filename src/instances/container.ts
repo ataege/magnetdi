@@ -20,7 +20,7 @@ export class Container {
 	 * @param {string} token The token to resolve.
 	 * @example container.resolve('foo');
 	 */
-	public resolve(token: string) {
+	public resolve<T>(token: string): T {
 		const match = find(this.providers, (_provider, key) => key === token);
 
 		if (match) return match;
