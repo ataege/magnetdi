@@ -1,6 +1,6 @@
 {
   "name": "magnetdi",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Alternative Typescript dependency injection package.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
