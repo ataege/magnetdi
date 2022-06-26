@@ -2,10 +2,10 @@ import { find } from 'lodash';
 import { UnknownProviderError } from '../errors';
 
 export class Container {
-	protected _providers: { [key: string]: any } = {};
+	public providers: { [key: string]: any } = {};
 
 	public resolve(token: string) {
-		const match = find(this._providers, (_provider, key) => key === token);
+		const match = find(this.providers, (_provider, key) => key === token);
 
 		if (match) return match;
 
